@@ -1,0 +1,433 @@
+/*
+Theme Name: New
+Author: Jyotis
+*/
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato" san-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.header {
+  position: relative;
+  height: 75vh;
+  background-image: linear-gradient(to bottom right, #bbf0f0, #66bfbf);
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+
+.text-box--header-primary {
+  margin: 2.5rem auto 0;
+  font-size: 10rem;
+  font-family: "Sacramento", cursive;
+  color: #1e7a7a;
+  animation: moveLeft 0.75s ease-in-out;
+}
+
+.header-singleText {
+  transform: translate(-25%, -50%);
+  animation: none;
+}
+
+.typewriter--header-sub {
+  font-size: 5rem;
+  color: #1e7a7a;
+  font-weight: normal;
+  padding: 1rem;
+}
+
+.textbox--pro {
+  text-decoration: underline;
+}
+
+.header__topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-item {
+  text-decoration: none;
+  display: block;
+  float: right;
+}
+
+.menu_class {
+  position: absolute;
+  right: 1rem;
+}
+
+.header__topnav a {
+  float: right;
+  display: block;
+  color: #1e7a7a;
+  text-align: center;
+  padding: 1.4rem 2.5rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.header__topnav a:hover {
+  color: #049e9e;
+}
+
+.header__topnav a.active {
+  float: left;
+  color: #049e9e;
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+}
+
+.header__topnav .icon {
+  display: none;
+}
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #131212;
+  font-size: 5.8rem;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  font-size: 2rem;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+.text-box--typewriter h2 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  animation: typing 3s steps(40, end), blink-caret 0.75s;
+}
+/*---------------------main section--------------------------------*/
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+  text-align: center;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #66bfbf, #1e7a7a);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 10rem;
+}
+
+.description {
+  font-size: 2rem;
+  color: #777;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*---------------------------About me-----------------------------------*/
+.profile-img {
+  position: absolute;
+  top: 50%;
+  width: 20rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.funfact-div {
+  width: 100%;
+  height: 30rem;
+  background-color: antiquewhite;
+  clip-path: ellipse(50% 35% at 50% 50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.funfact-text {
+  font-size: 2.5rem;
+  color: #777;
+  align-self: center;
+  margin: 0 auto;
+  width: 78%;
+}
+
+/*--------Blog post------------------------------*/
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(#000, 0.1);
+  background-color: #d6f0f0;
+  border-radius: 3px;
+  padding: 6rem 6rem 6rem 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+}
+@media only screen and (max-width: 56.25em) {
+  .story {
+    width: 100%;
+    padding: 4rem 4rem 4rem 7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story {
+    transform: skewX(0);
+    transform: translateX(-3rem) skewX(0);
+  }
+
+  .story__text {
+    transform: skewX(0);
+  }
+}
+
+.img-div {
+  float: left;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.story__img {
+  width: 20rem;
+  height: 20rem;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.story {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: #66bfbf;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.story__text {
+  transform: skewX(12deg);
+  text-overflow: ellipsis;
+}
+
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(#000, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(#000, 0.3);
+}
+
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 2rem 4rem rgba(#000, 0.2);
+  border-radius: 3px;
+  display: table;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.25);
+  font-size: 3rem;
+}
+
+.popup__img {
+  width: 100%;
+}
+
+.popup__left {
+  width: 33.333333%;
+  display: table-cell;
+}
+
+.popup__right {
+  width: 66.6666667%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+
+.popup__text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+/*-----------------------decription home-page--------------*/
+main {
+  width: 100%;
+}
+.description {
+  display: flex;
+  min-width: 114rem;
+  justify-content: space-evenly;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.description__text {
+  width: calc((100%-6rem) / 2);
+  text-align: left;
+  padding: 2rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.heading_tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.composition {
+  position: relative;
+  width: calc((100%-6rem) / 2);
+}
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+
+.composition__photo:hover {
+  outline: 1.5rem solid #66bfbf;
+  transform: scale(1.05);
+  box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+  z-index: 20;
+}
+
+.photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+.photo--p3 {
+  left: 5%;
+  top: 10rem;
+}
+
+.composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+/*media queries*/
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .header__topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header__topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    background: #fff;
+  }
+
+  .typewriter--header-sub {
+    font-size: 4rem;
+  }
+  .header__topnav a:not(:first-child) {
+    display: none;
+  }
+  .header__topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .funfact-div {
+    clip-path: none;
+  }
+}

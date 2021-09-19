@@ -1,0 +1,8 @@
+2021-09-10T13:40:06+00:00 CRITICAL Cannot redeclare the_title() (previously declared in C:\xampp\htdocs\wordpress\wp-includes\post-template.php:42) in C:\xampp\htdocs\wordpress\wp-content\themes\twentytwenty-child\functions.php on line 39
+
+2021-09-10T13:40:18+00:00 CRITICAL Cannot redeclare the_title() (previously declared in C:\xampp\htdocs\wordpress\wp-includes\post-template.php:42) in C:\xampp\htdocs\wordpress\wp-content\themes\twentytwenty-child\functions.php on line 39
+
+2021-09-10T13:40:19+00:00 CRITICAL Cannot redeclare the_title() (previously declared in C:\xampp\htdocs\wordpress\wp-includes\post-template.php:42) in C:\xampp\htdocs\wordpress\wp-content\themes\twentytwenty-child\functions.php on line 39
+
+2021-09-10T13:40:24+00:00 CRITICAL Cannot redeclare the_title() (previously declared in C:\xampp\htdocs\wordpress\wp-includes\post-template.php:42) in C:\xampp\htdocs\wordpress\wp-content\themes\twentytwenty-child\functions.php on line 39
+
